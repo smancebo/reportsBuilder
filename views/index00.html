@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Blog!</h1>
+
+    {{#each entries}}
+        <p>
+            <a class="blog_link" href="/article/{{id}}">{{title}}</a><br />
+            Published: {{published}}
+
+        </p>
+    {{/each}}
+
+
+    <footer>
+        <p>
+            <a href="/">Home</a> ~ <a href="/about">About Me</a> ~ <a href="/article">Some Article</a>
+        </p>
+    </footer>
+</body>
+</html>

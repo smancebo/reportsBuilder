@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Untitled-1</title>
+    
+</head>
+<body>
+
+    <div>
+        <div class="nav"></div>
+        
+        <div class="dv_main" style="text-align:center">
+            <div class="toolbox">
+                <ul class="ul_toolbox">
+                    <li class="li_selected" tag="default"><a><div class="tool_img" style="background-image: url(images/rtptool.png); background-position:  0px -12px; "></div><span>Cursor</span></a></li>
+                    <li tag='datasource' component ="true"><a><div class="tool_img" style="background-image: url(images/rtptool.png); background-position: -15px -13px; "></div><span>Datasource</span></a></li>
+                    <li tag='label'><a><div class="tool_img" style="background-image: url(images/rtptool.png); background-position:  0px 0px; "></div><span>Label</span></a></li>
+                    <li tag='image'><a><div class="tool_img" style="background-image: url(images/rtptool.png); background-position: -15px 0px; "></div><span>Image</span></a></li>
+                    <li tag='data_text'><a><div class="tool_img" style="background-image: url(images/rtptool.png); background-position: -87px 0px; "></div><span>Data Text</span></a></li>
+                    <li tag='formula'><a><div class="tool_img" style="background-image: url(images/rtptool.png); background-position: -59px 0px; "></div><span>Formula</span></a></li>
+                    <li tag='line'><a><div class="tool_img" style="background-image: url(images/rtptool.png); background-position: -72px 0px; "></div><span>Line</span></a></li>
+                    <li tag='box'><a><div class="tool_img" style="background-image: url(images/rtptool.png); background-position: -100px 0px; "></div><span>Box</span></a></li>
+                    <li tag='chart'><a><div class="tool_img" style="background-image: url(images/rtptool.png); background-position: -45px 0px; "></div><span>Chart</span></a></li>
+                </ul>
+            </div>
+            <div class="components_holder"></div>
+            <div class="toolbar">
+                <ul class="toolbarUl">
+                    <li title="Open"><div style="background-image:url(images/tbar.png); background-position:0px 0px;"></div></li>
+                    <li title="Save"><div style="background-image:url(images/tbar.png); background-position:-23px 0px;"></div></li>
+                    <li title="Save As"><div style="background-image:url(images/tbar.png); background-position:-46px 0px;"></div></li>
+                    <li class="separator"><div></div></li>
+                    <li align_prop="left" title="Align Left" onclick="changeAlign(this)"><div style="background-image:url(images/tbar.png); background-position:-46px -23px;"></div></li>
+                    <li align_prop="center" title="Align Center" onclick="changeAlign(this)"><div style="background-image:url(images/tbar.png); background-position:0px -23px;"></div></li>
+                    <li align_prop="justify" title="Justify" onclick="changeAlign(this)"><div style="background-image:url(images/tbar.png); background-position:-23px -23px;"></div></li>
+                    <li align_prop="right" title="Align Right" onclick="changeAlign(this)"><div style="background-image:url(images/tbar.png); background-position:-69px -23px;"></div></li>
+                    <li class="separator"><div></div></li>
+                    <li title="Font Style">
+                        <select id="ddlFont" onchange="changeFont(this)" title="Font type">
+                            <option style="font-family:'Arial';" value="Arial">Arial</option>
+                            <option style="font-family:'Arial Black';" value="Arial Black">Arial Black</option>
+                            <option style="font-family:'Book Antiqua';" value="Book Antiqua">Book Antiqua</option>
+                            <option style="font-family:'Charcoal';" value="Charcoal">Charcoal</option>
+                            <option style="font-family:'Comic Sans MS';" value="Comic Sans MS">Comic Sans MS</option>
+                            <option style="font-family:'Courier';" value="Courier">Courier</option>
+                            <option style="font-family:'Courier New';" value="Courier New">Courier New</option>
+                            <option style="font-family:'cursive';" value="cursive">cursive</option>
+                            <option style="font-family:'Gadget';" value="Gadget">Gadget</option>
+                            <option style="font-family:'Geneva';" value="Geneva">Geneva</option>
+                            <option style="font-family:'Georgia';" value="Georgia">Georgia</option>
+                            <option style="font-family:'Helvetica';" value="Helvetica">Helvetica</option>
+                            <option style="font-family:'Impact';" value="Impact">Impact</option>
+                            <option style="font-family:'Lucida Console';" value="Lucida Console">Lucida Console</option>
+                            <option style="font-family:'Lucida Grande';" value="Lucida Grande">Lucida Grande</option>
+                            <option style="font-family:'Lucida Sans Unicode';" value="Lucida Sans Unicode">Lucida Sans Unicode</option>
+                            <option style="font-family:'Monaco';" value="Monaco">Monaco</option>
+                            <option style="font-family:'monospace';" value="monospace">monospace</option>
+                            <option style="font-family:'Palatino';" value="Palatino">Palatino</option>
+                            <option style="font-family:'Palatino Lonotype';" value="Palatino Lonotype">Palatino Lonotype</option>
+                            <option style="font-family:'sans-serif';" value="sans-serif">sans-serif</option>
+                            <option style="font-family:'serif';" value="serif">serif</option>
+                            <option style="font-family:'Tahoma';" value="Tahoma">Tahoma</option>
+                            <option style="font-family:'Times';" value="Times">Times</option>
+                            <option style="font-family:'Times New Roman';" value="Times New Roman">Times New Roman</option>
+                            <option style="font-family:'Trabuchet MS';" value="Trabuchet MS">Trabuchet MS</option>
+                            <option style="font-family:'Verdana';" value="Verdana">Verdana</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select id="ddlFontStyle" onchange="changeFontStyle(this)" title="Font style">
+                            <option value="normal">Regular</option>
+                            <option value="italic">Italic</option>
+                            <option value="bold">Bold</option>
+                            <option value="bold_italic">Bold Italic</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select id="ddlSize" onchange="changeFontSize()" title="Font size">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option selected="selected" value="14">14</option>
+                            <option value="16">16</option>
+                            <option value="18">18</option>
+                            <option value="24">24</option>
+                            <option value="30">30</option>
+                            <option value="36">36</option>
+                            <option value="48">48</option>
+                            <option value="60">60</option>
+                            <option value="72">72</option>
+
+                        </select>
+                    </li>
+                    <li>
+                        <select id="ddlUnit" onchange="changeFontSize()" title="Font size unit">
+                            <option value="%">%</option>
+                            <option value="in">in</option>
+                            <option value="cm">cm</option>
+                            <option value="mm">mm</option>
+                            <option value="em">em</option>
+                            <option value="ex">ex</option>
+                            <option value="pt">pt</option>
+                            <option value="pc">pc</option>
+                            <option selected="selected" value="px">px</option>
+                        </select>
+                    </li>
+                    <li>
+                        <input type="text" id="picker" class="cpicker" title="Text color" />
+                    </li>
+                </ul>
+            </div>
+            <div class='workpaper Letter'>
+                <div class="section rptheader defsec" name="rptheader" title="Report Header"></div>
+                <div class="section pageheader defsec" name="pageheader" title="Page Header"></div>
+                <div class="section details defsec" name="details" title="Details"></div>
+                <div class="section pagefooter defsec" name="pagefooter" title="Page Footer"></div>
+                <div class="section rptfooter defsec" name="rptfooter" title="Report Footer"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dvUpImage" title="Please choose a file" style="width:300px !important; height:110px !important">
+        <div class="dv_form">
+            <p style="margin:0">Please Choose a image file</p>
+            <br />
+            <input id="fileupload" name="fileupload" type="file" /><img id="imgAjax" src="/images/axd.gif" style="display:none" />
+            <br />
+            <div style="text-align:center">
+                <br />
+                <input type="button" id="btnOkUpload" value="Ok"  onclick="Upload_Files()"/>
+                
+            </div>
+        </div>
+       
+    </div>
+    <div id="dvdatasource" title="Datasource creation" style="display:inline-block">
+        <div class="dv_form">
+            <a style="color:blue; font-size:small; text-decoration:underline; cursor:pointer" onclick="$('#dvCreatetable').dialog('open');">Add Table</a>
+            
+            <div id="tabTables">
+                <ul id="ulTables">
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div id="dvCreatetable" style="display:inline-block" >   
+        <p>Table Name</p>
+        <input type="text" id="txt_table_name" name="txt_table_name" class="textbox" />
+        <div style="text-align:center">
+            <input type="button" value="Create!" id="btn_create_table" onclick="create_table()" />
+        </div>
+    </div>
+    <div id="dvCreateSection" title="Create New Section" style="display:inline-block">
+        <p>Section Name</p>
+        <input type="text" id="txt_section_name" name="txt_section_name" class="textbox" />
+        <div style="text-align:center">
+            <input type="button" value="Create!" id="btn_create_section" onclick="create_section($('#txt_section_name').val())" />
+        </div>
+    </div>
+    <div id="dvSelectdatasource" title="Please select a field" style="display:inline-block">
+        <p>Table</p>
+        <select id="ddlTables" class="dropdownlist"></select>
+        <p>Field</p>
+        <select id="ddlFields" class='dropdownlist'></select>
+        <div style="text-align:center">
+            <input type="button" value="Select!" id="btn_set_datadource" onclick="set_datasource()" />
+        </div>
+    </div>
+    <div id="dvFormula" title="Create Formula">
+        <p>Formula Name</p>
+        <input id="txt_formula_name" class="textbox" />
+        <p>Code</p>
+        <div>
+            <textarea id="txt_formula_code" class="txt_code"></textarea>
+        </div>
+
+        <div style="text-align:center">
+            <input type="button" value="Save!" id="btn_set_formula" onclick="javascript: set_formula($('#dvFormula').data('target'))" />
+        </div>
+
+    </div>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            Initialize();
+        });
+
+        function Save() {
+            var xmlDoc = $("<doc>");
+            var rpthead = "<report layout='{layout}'>\n".supplant({ layout: 'portrait' });
+            var report = $(rpthead);
+
+            $('.defsec').each(function () {
+                
+                var section = new Section();
+
+                section.getSectionByName($(this).attr('name'));
+                report.append(section.__render() + '\n');
+            });
+
+
+            //Data Source
+
+            report.append(datasource.__render());
+
+
+
+
+            xmlDoc.append(report);
+
+
+
+
+
+
+            var s = xmlToString($.parseXML(xmlDoc.html()));
+            
+            $.post('send_xml_data', { xml: s }, function (res) {
+               
+                if(res == '1')
+                {
+                    alert('File saved successfully');
+                }
+                else
+                {
+                    alert(res);
+                }
+            });
+            
+
+        }
+
+      
+
+    </script>
+
+    <div id='dvSecMenu' style='width:190px; border:1px solid #bababa; display:none'>
+        <ul class='menu' style='padding:0; margin:0; list-style-type:none'>
+            <li id='menu_lnk_create'><div class="img_menu" style="background-image:url(images/tbar.png); background-position:-93px -1px;"></div>New Section</li>
+            
+            <li id='menu_lnk_supress'><div class="img_menu" style="background-image:url(images/tbar.png); background-position:-70px -1px;"></div><span>Supress</span></li>
+        </ul>
+    </div>
+
+
+    <div id="dvElementMenu" style='width:190px; border:1px solid #bababa; display:none'>
+        <ul class="mnu_element" style='padding:0; margin:0; list-style-type:none'>
+           
+                <li><span>Align</span></li>
+            <li>
+
+                <ul style="list-style-type:none">
+                    <li><a id="lnk_align_left">Left</a></li>
+                    <li><a id="lnk_align_right">Right</a></li>
+                    <li><a id="lnk_align_top">Top</a></li>
+                    <li><a id="lnk_align_bottom">Bottom</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+
+    </div>
+
+</body>
+</html>
+
+
+<!--
+    
+    <elements>
+
+    <image bytes="" height="" width="" left="" top="" class="" />
+
+    <label text="" font-size="" height="" width="" top="" left="" align="" class="" />
+
+    <line width="" top="" left="" class="" />
+
+    <data-text width="" top="" left="" text="" font-size="" class="" />
+
+    <formula text="" font-size="" height="" width="" top="" left="" align="" class="" />
+
+    <box width="" height="" left="" top="" fill_color="" border_color="" class="" />
+
+    <chart type="bar | pie " width="" height="" left="" top="" class="">
+        <data>
+        </data>
+    </chart>
+
+</elements>
+
+      <table class="mod_table">
+                <thead>
+                    <tr>
+                        <th>Field Name</th>
+                        <th>Data Type</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="txt_field_name" name="txt_field_name" class="textbox" />
+                    </td>
+                    <td>
+                        <select id="ddlDatatype" class="dropdownlist">
+                            <option value="int">Integer</option>
+                            <option value="float">Decimal</option>
+                            <option value="string">String</option>
+                            <option value="datetime">Date Time</option>
+                            <option value="bool">Boolean</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="button" value="Add" onclick="show_close_mod_table(this)" />
+                    </td>
+                </tr>
+            </table>
+-->
+
+

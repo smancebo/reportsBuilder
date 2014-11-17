@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>ExpressApp7</Name>
+    <RootNamespace>ExpressApp7</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>83aac9f6-1094-40fc-8ce9-2ca0fe8ccbac</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>app.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ProjectFiles</ProjectView>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="blog.js" />
+    <Compile Include="public\script\alsodrag.js" />
+    <Compile Include="public\script\colpick.js" />
+    <Compile Include="public\script\datasourcejs.js" />
+    <Compile Include="public\script\elements.js" />
+    <Compile Include="public\script\index.js" />
+    <Compile Include="public\script\jquery-1.9.1.js" />
+    <Compile Include="public\script\jquery-ui-1.10.2.custom.min.js" />
+    <Compile Include="public\script\jquery-ui.drag-multiple.min.js" />
+    <Compile Include="public\script\jquery.contextmenu.r2.js" />
+    <Compile Include="public\script\migrate\jquery-migrate-1.1.1.min.js" />
+    <Compile Include="public\script\rpt_defjs.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="routes\user.js" />
+    <Content Include="package.json" />
+    <Content Include="public\images\axd.gif" />
+    <Content Include="public\images\db.png" />
+    <Content Include="public\images\delete.png" />
+    <Content Include="public\images\rtptool.png" />
+    <Content Include="public\images\tbar.png" />
+    <Content Include="public\sample\rep.xml" />
+    <Content Include="public\style\colpick.css" />
+    <Content Include="public\style\custom-theme2\images\animated-overlay.gif" />
+    <Content Include="public\style\custom-theme2\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="public\style\custom-theme2\images\ui-bg_flat_65_ffffff_40x100.png" />
+    <Content Include="public\style\custom-theme2\images\ui-bg_flat_75_97c6e5_40x100.png" />
+    <Content Include="public\style\custom-theme2\images\ui-bg_flat_75_c4c4c4_40x100.png" />
+    <Content Include="public\style\custom-theme2\images\ui-bg_flat_75_f0f0f0_40x100.png" />
+    <Content Include="public\style\custom-theme2\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="public\style\custom-theme2\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="public\style\custom-theme2\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="public\style\custom-theme2\images\ui-icons_282828_256x240.png" />
+    <Content Include="public\style\custom-theme2\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="public\style\custom-theme2\images\ui-icons_454545_256x240.png" />
+    <Content Include="public\style\custom-theme2\images\ui-icons_888888_256x240.png" />
+    <Content Include="public\style\custom-theme2\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="public\style\custom-theme2\jquery-ui-1.10.2.custom.min.css" />
+    <Content Include="public\style\custom-theme2\jquery-ui-1.10.3.custom.css" />
+    <Content Include="public\style\custom-theme2\jquery-ui-1.10.3.custom.min.css" />
+    <Content Include="public\style\style.css" />
+    <Content Include="README.md" />
+    <Content Include="views\index.html" />
+    <Content Include="views\upimg.html" />
+    <Content Include="views\index00.html" />
+    <Content Include="views\layout.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\sample\" />
+    <Folder Include="public\script\" />
+    <Folder Include="public\script\migrate\" />
+    <Folder Include="public\style\" />
+    <Folder Include="public\style\custom-theme2\" />
+    <Folder Include="public\style\custom-theme2\images\" />
+    <Folder Include="routes\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

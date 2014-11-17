@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<report layout="portrait"><section name="rptheader"><elements><label text="Label1" _font_size="14px" _font_color="rgb(0, 0, 0)" __type="label" height="25px" width="71px" top="25px" left="80px" class="label element ui-draggable" _align="left" _font="Arial" _font_style="normal"/>
+<label text="Label2" _font_size="14px" _font_color="rgb(0, 0, 0)" __type="label" height="27px" width="109px" top="29px" left="305px" class="label element ui-draggable ui-resizable sel_element" _align="left" _font="Arial" _font_style="normal"/>
+</elements></section>
+<section name="pageheader"><elements/></section>
+<section name="details"><elements/></section>
+<section name="pagefooter"><elements/></section>
+<section name="rptfooter"><elements/></section>
+</report>

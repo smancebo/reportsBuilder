@@ -1,0 +1,457 @@
+﻿body, html {
+    margin:0;
+    background-color:#f5f5f5;
+    height:100%
+}
+
+.nav
+{
+    height:32px;
+    background-color:#42474f;
+}
+
+.toolbox
+{
+    display: inline-block;
+    width: 150px;
+    min-height: 280px;
+    height:auto;
+    background-color: #42474f;
+    float:left;
+    
+}
+
+.workpaper
+{
+    background-color: #fff;
+    display: inline-block;
+    margin-top:20px;
+    position:relative;
+}
+
+.Letter
+{
+    width: 8.5in;
+    height: auto;
+}
+
+.section
+{
+    border: 1px dashed #000;
+    min-height: 80px;
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom:-1px;
+    overflow:hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
+     position:relative
+}
+
+.allow_select
+{
+    -webkit-touch-callout: initial;
+    -webkit-user-select: initial;
+    -khtml-user-select: initial;
+    -moz-user-select: initial;
+    -ms-user-select: initial;
+     user-select: initial;
+}
+
+.section > .section
+{
+    border: 1px dashed blue;
+    margin: 5px;
+    min-width: 98.5%;
+    max-width: 98.5%;
+}
+
+.w_mark
+{
+    font-size: 1.5em;
+    font-family: cursive;
+    color: #f2f2f2;
+    display: inline-block;
+   
+    z-index:-100;
+}
+
+.ul_toolbox
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family: cursive;
+    color: white;
+    font-size: 12pt;
+}
+
+.ul_toolbox li
+{
+    padding-top: 11px;
+    padding-bottom: 11px;
+    text-align:left;
+}
+
+.ul_toolbox li:hover
+{
+    background-color: #228ada;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    cursor:pointer;
+    text-align:left;
+}
+
+.li_selected
+{
+    background-color:#228ada;
+}
+
+.tool_img
+{
+    width:14px;
+    height:14px;
+    
+    display:inline-block;
+    margin-right: 8px;
+    margin-left:15%;
+    
+
+}
+
+
+.marquee
+{
+     border: 1px dashed #000;
+     position:absolute;
+}
+
+.sel_element
+{
+    border: 1px dashed #7e8ede
+}
+
+.marquee_sel
+{
+     border: 1px dashed #7e8ede;
+}
+
+.label
+{
+    position:absolute;
+    text-align:left;
+    display:block;
+    overflow:hidden;
+    background-color:white;
+   
+}
+
+.element
+{
+    position:absolute;
+    background-color:transparent;
+    font-size:12pt
+
+}
+
+.img
+{
+   
+    outline:1px solid #dd7ede;
+    background-color:#d0d0d0;
+}
+
+.line
+{
+    height:2px;
+    min-height:2px;
+   
+}
+
+.box
+{
+     
+     outline:1px solid #000;
+}
+
+.data_text
+{
+    outline: 1px dashed #3adb68;
+    text-align:left;
+    overflow:hidden;
+}
+
+.formula
+{
+    outline: 1px dashed #db3a3a;
+    text-align:left;
+    overflow:hidden;
+}
+
+.components_holder
+{
+    width: 40px;
+    border-right: 1px solid #42474f;
+    min-height: 300px;
+    display: inline-block;
+    float: left;
+    border-bottom: 1px solid #42474f;
+    background-color: white;
+    text-align:center;
+    height:auto;
+    padding-top:5px;
+    display:none
+}
+
+.component
+{
+    width:30px;
+    height:30px;
+    display:inline-block;
+    margin-bottom:5px;
+
+}
+
+.datasource
+{
+    outline:1px dashed #ec9e2e;
+    background-image: url('../images/db.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.vertical_text {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    /* also accepts left, right, top, bottom coordinates; not required, but a good idea for styling */
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    /* Should be unset in IE9+ I think. */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+p
+{
+    margin:0;
+}
+
+.mod_table 
+{
+     -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+     user-select: none;
+}
+
+.mod_table th
+{
+    text-align:left
+}
+
+.mod_table td
+{
+    height:20px;
+}
+
+.mod_table label
+{
+    font-family:cursive;
+    font-size:10pt
+}
+
+.row_rm
+{
+    display:none;
+    cursor:pointer
+}
+
+.row_table
+{
+    height:16px;
+}
+
+
+.droppable
+{
+    border: 1px dashed #ef3333;
+}
+
+.dropdownlist {
+    width:135px;
+    height:25px
+
+}
+
+.txt_code
+{
+    margin: 2px;
+    width: 355px;
+    height: 140px;
+    resize:none
+}
+
+.toolbar
+{
+    height:25px;
+    background-color:white;
+    text-align:left;
+    padding:2px;
+    border-bottom: 1px dashed #c5c5c5;
+}
+
+.toolbarUl
+{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: 32px;
+    padding-left:2px;
+    
+}
+.toolbarUl li
+{
+    display: inline;
+    float: left;
+    margin-right:2px;
+    height:24px;
+    
+}
+
+
+
+
+.toolbarUl li:hover
+{
+    display: inline;
+    float: left;
+    margin-right:2px;
+    height:24px;
+    background-color:#fcb538;
+    cursor:pointer
+}
+
+.toolbarulsel
+{
+    background-color:#fcb538;
+}
+
+.toolbarUl .separator:hover{
+    background-color:white;
+    cursor:default
+}
+
+.toolbarUl li:active
+{
+    display: inline;
+    float: left;
+    margin-right:2px;
+    height:24px;
+    background-color:#c56b00;
+    cursor:pointer
+}
+
+
+.toolbarUl li div
+{
+    height:24px;
+    width:24px;
+    margin-bottom:2px;
+    background-repeat:no-repeat
+}
+
+.menu li .img_menu
+{
+    width:22px; 
+    height:22px; 
+    border:none; 
+    vertical-align:middle;
+    margin-right:2px;
+    margin-left:2px;
+    display:inline-block
+}
+
+.menu li
+{
+    height:29px;
+    font-family:Trebuchet MS;
+    font-size:12px;
+    color:#282828;
+    
+}
+
+.menu li:hover
+{
+     font-family:Trebuchet MS;
+    font-size:12px;
+    color:#282828;
+    height:29px;
+    cursor:pointer;
+    background-color:#fbe3a3;
+    
+}
+
+.supress
+{
+    background-color: rgb(240, 242, 243);
+    border: 1px dashed rgb(255, 126, 126);
+}
+
+#picker {
+	margin:1px;
+	border:1px solid #000;
+    padding-left:5px;
+	width:70px;
+	height:20px;
+	border-right:20px solid #000;
+	line-height:20px;
+    cursor:pointer;
+    border-radius:5px
+}
+
+.toolbarUl select
+{
+    height: 22px;
+    margin-top: 1px;
+    border:1px solid #42474f;
+    border-radius:5px
+}
+
+
+.mnu_element ul {
+	display: none;
+}
+
+.mnu_element:after {
+		content: ""; clear: both; display: block;
+	}
+
+.mnu_element li:hover > ul {
+    display: block;
+}
+
+
+.mnu_element ul li {
+		float: none; 
+		border-top: 1px solid #6b727c;
+		border-bottom: 1px solid #575f6a;
+		position: relative;
+	}
+		nav ul ul li a {
+			padding: 15px 40px;
+			color: #fff;
+		}	
+			nav ul ul li a:hover {
+				background: #4b545f;
+			}

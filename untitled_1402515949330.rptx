@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<report layout="portrait">
+  <section name="rptheader">
+    <elements>
+      <label text="Label1" _font_size="18px" _font_color="rgb(0, 0, 0)" __type="label" height="23px" width="104px" top="11px" left="14px" class="label element ui-draggable ui-resizable sel_element" _align="left" _font="Courier New" _font_style=""/>
+    </elements>
+  </section>
+  <section name="pageheader">
+    <elements/>
+  </section>
+  <section name="details">
+    <elements/>
+  </section>
+  <section name="pagefooter">
+    <elements/>
+  </section>
+  <section name="rptfooter">
+    <elements/>
+  </section>
+
+  <datasource>
+    <dstables>
+      <dstable tablename="cliente">
+        <rows>
+          <row fieldname="nombre" fieldtype="string" fieldvalue=""></row>
+          <row fieldname="apellid" fieldtype="string" fieldvalue=""></row>
+          <row fieldname="edad" fieldtype="int" fieldvalue="0"></row>
+          <row fieldname="fecha_nacimiento" fieldtype="datetime"></row>
+          <row fieldname="casado" fieldtype="bool" fieldvalue="false"></row>
+        </rows>
+      </dstable>
+      <dstable tablename="person">
+        <rows>
+          <row fieldname="cedula" fieldtype="string" fieldvalue=""></row>
+          <row fieldname="nombre" fieldtype="string" fieldvalue=""></row>
+          <row fieldname="apellido" fieldtype="string" fieldvalue=""></row>
+        </rows>
+      </dstable>
+    </dstables>
+  </datasource>
+</report>
+
+
+
+
