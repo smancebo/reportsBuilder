@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<report layout="portrait"><section name="rptheader"><elements><datatext _font_size="16px" _font_color="rgb(0, 0, 0)" text="{nombre}" _align="left" datasource="" datatype="" datavalue="" datatable="" __type="datatext" height="19px" width="78px" top="22.171875px" left="90.828125px" class="data_text element ui-draggable" _font="Times New Roman" _font_style="normal"/>
+<datatext _font_size="16px" _font_color="rgb(0, 0, 0)" text="{apellido}" _align="left" datasource="" datatype="" datavalue="" datatable="" __type="datatext" height="18px" width="102px" top="47.171875px" left="220.828125px" class="data_text element ui-draggable" _font="Times New Roman" _font_style="normal"/>
+<label text="Nombre" _font_size="14px" _font_color="rgb(0, 0, 0)" __type="label" height="15px" width="72px" top="23px" left="35px" class="label element ui-draggable" _align="left" _font="Arial" _font_style="normal"/>
+</elements></section>
+<section name="pageheader"><elements/></section>
+<section name="details"><elements/></section>
+<section name="pagefooter"><elements/></section>
+<section name="rptfooter"><elements/></section>
+<datasource><dstables><dstable tablename="prersonas"><rows><row fieldname="nombre" fieldtype="string" fieldvalue=""/><row fieldname="apellido" fieldtype="string" fieldvalue=""/></rows></dstable></dstables></datasource></report>
